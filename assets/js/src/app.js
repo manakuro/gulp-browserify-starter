@@ -1,10 +1,8 @@
 var $ = require('jquery'),
     underscore = require('underscore'),
     Backbone = require('backbone');
-    // core = require('./core'); 
 
 Backbone.$ = $;
-// console.log(core);
 
 $(function(){
 
