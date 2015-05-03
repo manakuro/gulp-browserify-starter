@@ -26,7 +26,7 @@ var $ = require('gulp-load-plugins')(),
  */
 var srcfile = glob.sync('./assets/js/src/*.js'),
     options = assign({}, watchify.args, { entries: srcfile, debug: true }),
-    b = watchify(browserify(options));
+    b = watchify(browserify(options).require(srcfile));
 
 gulp.task('js', js_bundle);
 function js_bundle() {
